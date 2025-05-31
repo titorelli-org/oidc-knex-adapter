@@ -24,6 +24,10 @@
   ],
   "author": "YChebotaev <yury@chebotaev.ru>",
   "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/titorelli-org/oidc-knex-adapter"
+  },
   "devDependencies": {
     "@types/node": "^22.15.28",
     "change-case": "^5.4.4",

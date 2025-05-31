@@ -1,4 +1,4 @@
-name: Client build and publish
+name: Package build and publish
 on:
   push:
     branches:
@@ -6,6 +6,10 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4

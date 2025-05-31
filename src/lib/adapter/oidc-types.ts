@@ -1,0 +1,16 @@
+export const OidcTypes = {
+  Session: 1,
+  AccessToken: 2,
+  AuthorizationCode: 3,
+  RefreshToken: 4,
+  DeviceCode: 5,
+  ClientCredentials: 6,
+  Client: 7,
+  InitialAccessToken: 8,
+  RegistrationAccessToken: 9,
+  Interaction: 10,
+  ReplayDetection: 11,
+  PushedAuthorizationRequest: 12,
+  Grant: 13,
+  BackchannelAuthenticationRequest: 14,
+};

@@ -1,0 +1,37 @@
+{
+  "name": "@titorelli-org/oidc-knex-adapter",
+  "version": "0.1.0",
+  "description": "Adapter for node-oidc-provider for knex",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup-node",
+    "pretest": "npm run build",
+    "test": "tsx test/index.test.ts"
+  },
+  "keywords": [
+    "Titorelli",
+    "oidc",
+    "knex",
+    "adapter"
+  ],
+  "author": "YChebotaev <yury@chebotaev.ru>",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@types/node": "^22.15.28",
+    "change-case": "^5.4.4",
+    "knex": "^3.1.0",
+    "pino": "^9.7.0",
+    "sqlite3": "^5.1.7",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

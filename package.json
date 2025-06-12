@@ -1,6 +1,6 @@
 {
   "name": "@titorelli-org/oidc-knex-adapter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Adapter for node-oidc-provider for knex",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -27,6 +27,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/titorelli-org/oidc-knex-adapter"
+  },
+  "dependencies": {
+    "change-case": "^5.4.4",
+    "knex": "^3.1.0",
+    "pino": "^9.7.0",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@types/node": "^22.15.28",

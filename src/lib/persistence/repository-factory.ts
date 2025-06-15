@@ -2,10 +2,10 @@ import { Logger } from "pino";
 import { OidcTypes } from "../adapter";
 import { KnexDatabase } from "./knex-database";
 import * as repositories from "./repositories";
-import type { RepositoryBase } from "./repository-base";
+import type { OidcRepository } from "./oidc-repository";
 
 export class RepositoryFactory {
-  private readonly cache: Record<string, RepositoryBase> = {};
+  private readonly cache: Record<string, OidcRepository> = {};
 
   constructor(private database: KnexDatabase, private logger: Logger) {}
 

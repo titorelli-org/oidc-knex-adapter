@@ -13,7 +13,9 @@ export class RepositoryFactory {
     if (this.cache[name]) return this.cache[name];
 
     const [Repository] = Object.entries(repositories)
-      .filter(([className]) => className.startsWith(name))
+      .filter(
+        ([className]) => className.slice(0, -"Repository".length) === name,
+      )
       .map(([_, Ctor]) => Ctor);
 
     const repository = new Repository(this.database, this.logger);

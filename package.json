@@ -1,6 +1,6 @@
 {
   "name": "@titorelli-org/oidc-knex-adapter",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Adapter for node-oidc-provider for knex",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

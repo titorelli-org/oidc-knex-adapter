@@ -1,11 +1,11 @@
-import { snakeCase } from "change-case";
+import Case from "case";
 import { RepositoryBase } from "./repository-base";
 
 export class OidcRepository extends RepositoryBase {
   #type;
 
   constructor(name, type, db, logger) {
-    const tableName = snakeCase(name);
+    const tableName = Case.snake(name);
 
     super(tableName, db, logger);
 
